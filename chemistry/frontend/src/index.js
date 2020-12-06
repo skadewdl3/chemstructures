@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     if (!query) return 
-    axios.get(`http://chemstructures.herokuapp.com/compound/${query}`).then(res => {
+    axios.get(`https://chemstructures.herokuapp.com/compound/${query}`).then(res => {
       const data = res.data.info
       setSmile(data.smile)
     })
